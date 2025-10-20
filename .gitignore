@@ -1,5 +1,5 @@
 # pasta do ambiente virtual
 venv/
 
-#Arquivo de configuração(coloca a senha)
-config.py
+#Arquivo de configuração do banco
+.env

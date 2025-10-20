@@ -1,3 +1,0 @@
-# Troque o nome do arquvio para config.py e coloque a String de conexão do atlas
-
-MONGO_URI = "mongodb+srv://<seu_usuario>:<sua_senha>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority"
