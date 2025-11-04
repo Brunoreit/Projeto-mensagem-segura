@@ -1,5 +1,9 @@
 # pasta do ambiente virtual
 venv/
 
-#Arquivo de configuração do banco
-.env
+#Arquivo de co
+
+__pycache__/
+
+# Arquivos de bytecode compilado
+*.pyc
