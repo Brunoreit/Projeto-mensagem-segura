@@ -28,10 +28,10 @@ def salvar_mensagem(remetente, destinatario, mensagem_cifrada):
                 "timestamp": datetime.now()
             }
         )
-        print(f"Mensagem salva no banco de dados.")
+        print(f"\nMensagem salva no banco de dados.")
 
     except Exception as e:
-        print(f"Falha ao salvar mensagem no banco: {e}")    
+        print(f"\nFalha ao salvar mensagem no banco: {e}")    
 
 
 def buscar_mensagens_novas(nome_user):
@@ -55,7 +55,7 @@ def marcar_mensagem_como_lida(ID_mensagem):
             {"_id": ObjectId(ID_mensagem)},
             {"$set": {"status": "lida"}}
         )
-        print(f"Mensagem marcada como lida.")
+        print(f"\nMensagem marcada como lida.")
 
     except Exception as e:
         print(f"Falha ao atualizar status da mensagem {e}")

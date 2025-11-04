@@ -2,7 +2,7 @@ from simplecrypt import encrypt, decrypt
 # Funcao de Criptografia
 
 def criptografar(mensagem,senha):
-    criptografado = encrypt(mensagem,senha)
+    criptografado = encrypt(senha,mensagem)
     return criptografado
 
 #Funcao de Descriptografia
