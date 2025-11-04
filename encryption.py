@@ -1,14 +1,14 @@
-from cryptography.fernet import Fernet
-
-# Cria um chave
-chave = Fernet.generate_key()
-cipher = Fernet(chave)
-
+from simplecrypt import encrypt, decrypt
 # Funcao de Criptografia
-mensagem = input("Envie sua mensagem: ").encode()
-criptografado = cipher.encrypt(mensagem)
-print(f"Criptografado: {criptografado}")
+
+def criptografar(mensagem,senha):
+    criptografado = encrypt(mensagem,senha)
+    return criptografado
 
 #Funcao de Descriptografia
-original = cipher.decrypt(criptografado) 
-print(f"Descriptografado: {original.decode()}")
+def descriptografar(original,senha):
+    try:
+        original = decrypt(senha,original).decode()
+        return original
+    except:
+        return "Erro: Senha incorreta!"
