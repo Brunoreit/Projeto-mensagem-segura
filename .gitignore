@@ -7,3 +7,5 @@ __pycache__/
 
 # Arquivos de bytecode compilado
 *.pyc
+
+.env
